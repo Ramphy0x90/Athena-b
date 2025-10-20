@@ -12,3 +12,4 @@ function App() {
 }
 
 export default App;
+export const APP_NAME = 'Beauty Babe';

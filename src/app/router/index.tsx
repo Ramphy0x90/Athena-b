@@ -3,6 +3,7 @@ import App from '../App';
 import Home from '../../pages/home/Home';
 import Impressium from '../../pages/impressium/Impressium';
 import TermsAndConditions from '../../pages/terms-and-conditions/TermsAndConditions';
+import Nails from '../../pages/nails/Nails';
 
 export type RouteDef = {
 	path: string;
@@ -12,8 +13,9 @@ export type RouteDef = {
 
 export const routes: RouteDef[] = [
 	{ path: '/', id: 'home', label: 'Home' },
-	{ path: '/impressium', id: 'impressium', label: 'Impressium' },
+	{ path: '/nails', id: 'nails', label: 'Nails' },
 	{ path: '/agb', id: 'termsAndConditions', label: 'AGB' },
+	{ path: '/impressium', id: 'impressium', label: 'Impressium' },
 ] as const;
 
 const router = createBrowserRouter([
@@ -22,8 +24,9 @@ const router = createBrowserRouter([
 		element: <App />,
 		children: [
 			{ path: '/', element: <Home /> },
-			{ path: '/impressium', element: <Impressium /> },
+			{ path: '/nails', element: <Nails /> },
 			{ path: '/agb', element: <TermsAndConditions /> },
+			{ path: '/impressium', element: <Impressium /> },
 		],
 	},
 ]);
