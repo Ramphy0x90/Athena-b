@@ -1,0 +1,6 @@
+.page-root-container {
+	display: flex;
+	height: calc(100vh - var(--navbar-height));
+	background-color: var(--color-background);
+	padding: var(--space-3);
+}

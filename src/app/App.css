@@ -1,0 +1,18 @@
+:root {
+	--color-primary: #bfa960;
+	--color-secondary: #635333;
+	--color-success: #28a745;
+	--color-warning: #ffc107;
+	--color-error: #dc3545;
+	--color-background: #f5f5f5;
+	--color-surface: #ffffff;
+	--color-text-primary: #212121;
+	--color-text-secondary: #757575;
+
+	--space-1: 5px;
+	--space-2: 8px;
+	--space-3: 16px;
+
+	--navbar-height: 56px;
+	--navbar-width: 275px;
+}
