@@ -1,5 +1,5 @@
 import './Home.css';
-import homeHeader from '../../assets/vid/home-header.mov';
+import homeHeader from '../../assets/vid/home-header.mp4';
 
 export default function Home() {
 	return (
