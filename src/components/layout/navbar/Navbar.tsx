@@ -1,6 +1,6 @@
+import './Navbar.css';
 import { Link, useLocation } from 'react-router-dom';
 import { routes } from '../../../app/router';
-import './Navbar.css';
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { APP_NAME } from '../../../app/App';
@@ -21,7 +21,9 @@ export default function Navbar() {
 
 	return (
 		<div className="navbar-container">
-			<div className="identity-container">{APP_NAME}</div>
+			<div className="identity-container">
+				<Link to="/">{APP_NAME}</Link>
+			</div>
 
 			<div className="content-container">
 				{/* Button to open the menu */}
