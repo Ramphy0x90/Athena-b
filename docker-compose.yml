@@ -1,0 +1,20 @@
+version: '3.9'
+
+networks:
+  traefik-network:
+    external: true
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: athena-b-frontend
+    networks:
+      - traefik-network
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.http.routers.athena-b-frontend.rule=Host(`beauty-babe.ch`)'
+      - 'traefik.http.routers.athena-b-frontend.entrypoints=websecure'
+      - 'traefik.http.routers.athena-b-frontend.tls.certresolver=letsencrypt'
+      - 'traefik.http.services.athena-b-frontend.loadbalancer.server.port=80'

@@ -104,7 +104,7 @@ export default function Footer() {
 			</div>
 
 			<div className="copyright-container">
-				© {currentYear} Pro Nails & Beauty. Proudly developed and maintained by R16a
+				© {currentYear} {APP_NAME}. Proudly developed and maintained by R16a
 			</div>
 		</div>
 	);
