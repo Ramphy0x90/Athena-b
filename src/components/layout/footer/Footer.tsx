@@ -5,6 +5,7 @@ import paypal from '../../../assets/img/payment-methods/paypal.svg';
 import twint from '../../../assets/img/payment-methods/twint.svg';
 import { Link } from 'react-router-dom';
 import { APP_NAME } from '../../../app/App';
+import logo from '../../../assets/img/logo.jpeg';
 
 export default function Footer() {
 	const currentYear = new Date().getFullYear();
@@ -13,7 +14,9 @@ export default function Footer() {
 		<div className="footer-container">
 			<div className="content-container">
 				<div className="identity-container">
-					<Link to="/">{APP_NAME}</Link>
+					<Link to="/">
+						<img className="logo-img" src={logo} />
+					</Link>
 
 					<p>
 						Beauty Babe is the place where everyone can discover the beauty that highlights their

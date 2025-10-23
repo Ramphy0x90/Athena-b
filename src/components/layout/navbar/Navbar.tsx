@@ -4,6 +4,7 @@ import { routes } from '../../../app/router';
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { APP_NAME } from '../../../app/App';
+import logo from '../../../assets/img/logo.jpeg';
 
 /**
  * Maximum number of nav options shown before it
@@ -22,7 +23,9 @@ export default function Navbar() {
 	return (
 		<div className="navbar-container">
 			<div className="identity-container">
-				<Link to="/">{APP_NAME}</Link>
+				<Link to="/">
+					<img className="logo-img" src={logo} />
+				</Link>
 			</div>
 
 			<div className="content-container">
