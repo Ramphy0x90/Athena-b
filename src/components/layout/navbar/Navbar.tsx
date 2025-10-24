@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom';
 import { routes } from '../../../app/router';
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { APP_NAME } from '../../../app/App';
 import logo from '../../../assets/img/logo.jpeg';
 
 /**
