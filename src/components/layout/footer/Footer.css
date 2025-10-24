@@ -6,6 +6,7 @@
 	padding: var(--space-3);
 	padding-bottom: 0;
 	background-color: var(--color-surface);
+	line-height: 22px;
 }
 
 .footer-container .content-container {

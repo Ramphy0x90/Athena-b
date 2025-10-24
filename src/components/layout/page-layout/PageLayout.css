@@ -1,6 +1,6 @@
 .page-root-container {
 	display: flex;
 	flex-direction: column;
-	height: calc(100vh - var(--navbar-height));
+	min-height: calc(100vh - var(--navbar-height));
 	background-color: var(--color-background);
 }

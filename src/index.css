@@ -11,7 +11,6 @@ body {
 	scroll-behavior: smooth;
 	color: var(--color-text-primary) !important;
 	font-family: 'Source Sans Pro', sans-serif;
-	line-height: var(--line-height);
 }
 
 a {
