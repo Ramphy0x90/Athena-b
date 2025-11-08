@@ -48,3 +48,31 @@ p {
 	object-fit: cover;
 	object-position: center;
 }
+
+.page-container section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.page-container section .header {
+	text-align: center;
+}
+
+.page-container section .body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.page-container section .header {
+	font-size: 30px;
+}
+
+@media (min-width: 768px) {
+	.page-container section .header {
+		font-size: 45px;
+	}
+}

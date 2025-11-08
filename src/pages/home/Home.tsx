@@ -1,7 +1,7 @@
 import './Home.css';
 import homeHeader from '../../assets/vid/home-header.mp4';
 import Feature from '../../components/layout/feature/Feature';
-import { FEATURES_DEF } from './_static_data';
+import { FEATURES_DEF, PARTNERS_DEF, SERVICES_DEF } from './_static_data';
 import FeatureListEntry from '../../components/layout/FeatureList/FeatureListEntry';
 
 export default function Home() {
@@ -41,6 +41,47 @@ export default function Home() {
 							isLast={FEATURES.length === index + 1}></FeatureListEntry>
 					);
 				})}
+			</section>
+
+			<section className="partners">
+				<div className="header">Unsere Partnership</div>
+
+				<div className="body">
+					<div className="logos-container">
+						{PARTNERS_DEF.map((partner) => {
+							return (
+								<a href={partner.link} target="_blank">
+									<img src={partner.img}></img>
+								</a>
+							);
+						})}
+					</div>
+				</div>
+			</section>
+
+			<section className="services">
+				<div className="header">Unsere Leistungen</div>
+
+				<div className="body">
+					<div className="services-container">
+						{SERVICES_DEF.map((service) => {
+							return (
+								<div className="service">
+									<div className="body">
+										<div className="title">{service.title}</div>
+										<div className="description">{service.description}</div>
+									</div>
+
+									<div className="more">
+										<a href="">
+											<i className="bi bi-arrow-right-circle"></i>Mehr erfahren
+										</a>
+									</div>
+								</div>
+							);
+						})}
+					</div>
+				</div>
 			</section>
 		</div>
 	);
